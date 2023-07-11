@@ -8,8 +8,7 @@ import java.util.List;
 
 public class ChangeInGSON {
     private static final String ABSOLUTE_PARTF = "./textfolder/file2.txt";
-    private static final String ABSOLUTE_PARTF_IN_GSON =
-            "C:\\goit\\goitJava\\IdeaProjects\\HomeWorkGoITNumber10\\textfolder\\user.json";
+    private static final String ABSOLUTE_PARTF_IN_GSON = "./textfolder/user.json";
 
     private static List<User> readTextDok() {
         List<User> userList = new ArrayList<>();
