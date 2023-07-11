@@ -7,8 +7,7 @@ import java.util.Map;
 import java.util.*;
 
 public class CountWords {
-    private static final String ABSOLUTE_PARTF =
-            "C:\\goit\\goitJava\\IdeaProjects\\HomeWorkGoITNumber10\\textfolder\\words.txt";
+    private static final String ABSOLUTE_PARTF = "./textfolder/words.txt";
 
     public static Map<String, Integer> сountWord() {
         Map<String, Integer> wordArray = new HashMap<>();

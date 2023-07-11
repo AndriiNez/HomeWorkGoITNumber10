@@ -6,8 +6,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SortNumbers {
-    private static final String ABSOLUTE_PARTF =
-            "C:\\goit\\goitJava\\IdeaProjects\\HomeWorkGoITNumber10\\textfolder\\file1.txt";
+    private static final String ABSOLUTE_PARTF = "./textfolder/file1.txt";
 
     public static void printValidPhoneNumbers() {
         try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PARTF))) {
