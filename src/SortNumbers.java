@@ -6,10 +6,10 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class SortNumbers {
-    private static final String ABSOLUTE_PARTF = "./textfolder/file1.txt";
+    private static final String ABSOLUTE_PATH = "./textfolder/file1.txt";
 
     public static void printValidPhoneNumbers() {
-        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PARTF))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PATH))) {
             String line = reader.readLine();
             Pattern pattern = Pattern.compile("\\(\\d{3}\\) \\d{3}-\\d{4}|\\d{3}-\\d{3}-\\d{4}");
 

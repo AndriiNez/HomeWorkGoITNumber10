@@ -7,12 +7,12 @@ import java.util.List;
 
 
 public class ChangeInGSON {
-    private static final String ABSOLUTE_PARTF = "./textfolder/file2.txt";
-    private static final String ABSOLUTE_PARTF_IN_GSON = "./textfolder/user.json";
+    private static final String ABSOLUTE_PATH = "./textfolder/file2.txt";
+    private static final String ABSOLUTE_PATH_IN_GSON = "./textfolder/user.json";
 
     private static List<User> readTextDok() {
         List<User> userList = new ArrayList<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PARTF))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PATH))) {
             String line = reader.readLine();
             boolean isFirstLIne = true;
             String[] headers = null;
@@ -55,7 +55,7 @@ public class ChangeInGSON {
 
     private static void writeUsersToJsonFile() {
         List<User> userList = readTextDok();
-        File file = new File(ABSOLUTE_PARTF_IN_GSON);
+        File file = new File(ABSOLUTE_PATH_IN_GSON);
         checkIfFileAvailebel(file);
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         String json = gson.toJson(userList);

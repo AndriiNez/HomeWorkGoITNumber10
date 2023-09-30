@@ -7,11 +7,11 @@ import java.util.Map;
 import java.util.*;
 
 public class CountWords {
-    private static final String ABSOLUTE_PARTF = "./textfolder/words.txt";
+    private static final String ABSOLUTE_PATH = "./textfolder/words.txt";
 
     public static Map<String, Integer> сountWord() {
         Map<String, Integer> wordArray = new HashMap<>();
-        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PARTF))) {
+        try (BufferedReader reader = new BufferedReader(new FileReader(ABSOLUTE_PATH))) {
             String line = reader.readLine();
             while (line != null) {
                 String[] words = line.split("\\s+");
